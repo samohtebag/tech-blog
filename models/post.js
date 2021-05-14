@@ -1,10 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 
-const sequelize = require('../config/connection.js');
+const sequelize = require('../config/connection');
 
-class comment extends Model {}
+class post extends Model {}
 
-Category.init(
+post.init(
   {
     // copied from comment.js, not too many changes here
     id: {
@@ -43,8 +43,8 @@ Category.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'category',
+    modelName: 'post',
   }
 );
 
-module.exports = Category;
+module.exports = post;

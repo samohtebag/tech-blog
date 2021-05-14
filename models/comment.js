@@ -1,10 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 
-const sequelize = require('../config/connection.js');
+const sequelize = require('../config/connection');
 
 class comment extends Model {}
 
-Category.init(
+comment.init(
   {
     // no changes to ID
     id: {
@@ -51,6 +51,6 @@ Category.init(
   }
 );
 
-module.exports = Category;
+module.exports = comment;
 
 // used the models from the last HW on the e-commerce backend for my template. 

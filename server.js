@@ -14,8 +14,10 @@ const app = express();
 const PORT = process.env.PORT || 8000 ;
 
 const sess = {
-    secret: "My dirty little secret",
-    cookie: {},
+    secret: "I have no secrets, mortal.",
+    cookie: { 
+      // expires 5 * 13 * 1991
+    },
     resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({

@@ -1,0 +1,37 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "Tech-Blog",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samohtebag/tech-blog.git"
+  },
+  "author": "Gabe Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samohtebag/tech-blog"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bulma": "^0.9.3",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.9",
+    "sequelize": "^6.6.4"
+  },
+  "devDependencies": {
+    "@creativebulma/bulma-divider": "^1.1.0",
+    "jest": "^26.0.1"
+  }
+}
